@@ -23,4 +23,4 @@ RUN ln -s /etc/postgresql/9.3/main/postgresql.conf /var/lib/postgresql/9.3/main/
 WORKDIR /opt/metasploit-framework/
 ENV HOME /opt/metasploit-framework/
 ENV SHELL /bin/bash
-CMD sudo -bu postgres /usr/lib/postgresql/9.3/bin/postgres -D /var/lib/postgresql/9.3/main && sleep 2 && /bin/bash
+CMD sudo -bu postgres /usr/lib/postgresql/9.3/bin/postgres -D /var/lib/postgresql/9.3/main && sleep 2 && ${SHELL}
