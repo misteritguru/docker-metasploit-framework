@@ -13,5 +13,5 @@ docker build --rm -t usertaken/metasploit-framework github.com/UserTaken/docker-
 
 Run
 ```
-docker run -d -it -p 4444:4444 usertaken/metasploit-framework
+docker run -it -p 4444:4444 usertaken/metasploit-framework
 ```
