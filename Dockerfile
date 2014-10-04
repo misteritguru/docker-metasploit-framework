@@ -8,7 +8,7 @@ RUN gem install wirble sqlite3 bundler
 RUN git clone https://github.com/nmap/nmap.git /tmp/nmap && \
 	cd /tmp/nmap/ && ./configure && make && make install && rm -rf /tmp/nmap
 
-RUN git clone https://github.com/rapid7/metasploit-framework.git /opt/ && \
+RUN git clone https://github.com/rapid7/metasploit-framework.git /opt/metasploit-framework && \
 	cd /opt/metasploit-framework/ && bundle install
 
 USER postgres
