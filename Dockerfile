@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
-RUN apt-get update && apt-get upgrade -y && apt-get install -y ssh htop screen \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y ssh htop screen nano\
 	build-essential libreadline-dev libssl-dev libpq5 libpq-dev python pgadmin3 \
-	libreadline5 libsqlite3-dev libpcap-dev autoconf git postgresql nano apache2 \
+	libreadline5 libsqlite3-dev libpcap-dev autoconf git postgresql apache2 php5 \
 	zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev ruby1.9.3 ruby-dev 
 
 RUN gem install wirble sqlite3 bundler
