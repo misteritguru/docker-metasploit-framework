@@ -14,7 +14,7 @@ RUN git clone https://github.com/rapid7/metasploit-framework.git /opt/metasploit
 USER postgres
 ADD database.yml /opt/metasploit-framework/config/
 RUN /etc/init.d/postgresql start && \
-	psql -c "CREATE USER msf WITH ENCRYPTED PASSWORD 'msf';" && \
+	psql -c "CREATE USER msf WITH PASSWORD 'msf';" && \
 	createdb -O msf msf && \
 	/etc/init.d/postgresql stop
 
